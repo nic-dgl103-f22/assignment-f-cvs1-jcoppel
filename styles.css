@@ -10,13 +10,6 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  font-size: 1.6rem;
-}
-
 .cf::after {
   content: "";
   clear: both;
@@ -27,29 +20,51 @@ body {
 /*                               general styles                               */
 /* -------------------------------------------------------------------------- */
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+button {
+  background-color: #f79643;
+  color: white;
+  font-weight: 700;
+  font-size: 1.7rem;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
 /* --------------------------------- header --------------------------------- */
 
 header {
-  background-color: grey;
+  background-color: #707070;
   height: 150px;
 }
 
 .header-content {
-    margin: auto 15%;
+  margin: auto calc(15% - 20px);
+  overflow: auto;
 }
 
 header img {
-  padding: 10px;
   float: left;
-}
-
-ul {
-  margin: 0px;
-  list-style-type: none;
+  padding: 10px;
+  margin-left: -10px;
 }
 
 nav {
   text-align: right;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  height: 150px;
+  list-style-type: none;
 }
 
 nav ul li {
@@ -64,8 +79,75 @@ nav a {
   font-weight: 700;
 }
 
-/* ---------------------------------- main ---------------------------------- */
+/* ---------------------------------- hero ---------------------------------- */
 
-main {
-    margin: auto 15%;
+.hero {
+  background-color: #f1f1f1;
+  margin: 0px;
+  padding: 40px;
+}
+
+.hero-content {
+  margin: auto calc(15% - 50px);
+  overflow: auto;
+}
+
+.hero h1 {
+  margin: 0px;
+  padding-top: 20px;
+}
+
+.hero img {
+  float: right;
+  padding-left: 40px;
+  width: 60%;
+  height: auto;
+}
+
+/* -------------------------------- projects -------------------------------- */
+
+.projects {
+  background-color: white;
+  margin: 0px;
+  padding: 40px;
+}
+
+.projects-content {
+  margin: auto calc(15% - 50px);
+  overflow: auto;
+}
+
+.projects h2 {
+  padding-top: 40px;
+}
+
+article {
+  display: inline-block;
+  width: 30%;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+}
+
+/* css trickery to get equidistant spacing between inline-block elements */
+
+.article-container {
+  text-align: justify;
+  font-size: 0;
+}
+
+.article-container:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
+
+/* -------------------------------- prefooter ------------------------------- */
+
+.prefooter {
+  background-color: #707070;
 }

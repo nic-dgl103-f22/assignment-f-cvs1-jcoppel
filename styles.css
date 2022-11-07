@@ -23,7 +23,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
 }
@@ -36,6 +36,18 @@ button {
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.4rem;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -74,13 +86,41 @@ nav ul {
 nav ul li {
   display: inline-block;
   line-height: 150px;
-  padding-left: 40px;
+  padding-left: 80px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  font-size: 1.8rem;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+  
+  header img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  nav ul li {
+    display: block;
+    line-height: 1.8rem;
+    padding: 10px 0;
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -110,6 +150,21 @@ nav a {
   height: auto;
 }
 
+.hero button {
+  margin-top: 40px;
+}
+
+/* when the browser gets too small for proper side-by-side image display,
+this will display the image normally above the header */
+@media only screen and (max-width: 1100px) {
+  .hero img {
+    padding: 0;
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                  projects                                  */
 /* -------------------------------------------------------------------------- */
@@ -128,6 +183,10 @@ nav a {
   padding-top: 40px;
 }
 
+.projects h3 {
+  margin: 10px 0;
+}
+
 /* ---------------------------------- cards --------------------------------- */
 
 article {
@@ -143,7 +202,6 @@ article img {
 }
 
 /* css trickery to get equidistant spacing between inline-block elements */
-
 .article-container {
   text-align: justify;
   font-size: 0;
@@ -179,7 +237,7 @@ article img {
 
 .news {
   float: left;
-  width: 30%;
+  width: 25%;
   padding-right: 20px;
 }
 
@@ -196,7 +254,7 @@ article img {
 
 .about {
   float: left;
-  width: 55%;
+  width: 60%;
 }
 
 .about p {
@@ -211,7 +269,7 @@ article img {
 }
 
 .follow li {
-padding: 10px 0;
+  padding: 10px 0;
 }
 
 .follow li a {
@@ -223,3 +281,8 @@ padding: 10px 0;
 /*                                   footer                                   */
 /* -------------------------------------------------------------------------- */
 
+footer {
+  color: #707070;
+  text-align: center;
+  padding: 30px 0;
+}

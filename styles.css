@@ -23,14 +23,15 @@ html {
 body {
   margin: 0;
   padding: 0;
+  color: #212121;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
 }
 
 button {
-  background-color: #f79643;
-  color: white;
+  background-color: #FFA726;
+  color: #FAFAFA;
   font-weight: 700;
   font-size: 1.7rem;
   border: none;
@@ -55,7 +56,7 @@ h3 {
 /* -------------------------------------------------------------------------- */
 
 header {
-  background-color: #707070;
+  background-color: #455A64;
   height: 150px;
 }
 
@@ -90,18 +91,20 @@ nav ul li {
 }
 
 nav a {
-  color: white;
+  color: #FAFAFA;
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 700;
 }
 
+/* when the browser gets too small for navbar links to render
+side-by-side, this will display them vertically */
 @media only screen and (max-width: 1100px) {
   header {
     height: fit-content;
     padding-bottom: 20px;
   }
-  
+
   header img {
     float: none;
     display: block;
@@ -128,7 +131,7 @@ nav a {
 /* -------------------------------------------------------------------------- */
 
 .hero {
-  background-color: #f1f1f1;
+  background-color: #ECEFF1;
   margin: 0px;
   padding: 40px;
 }
@@ -170,7 +173,7 @@ this will display the image normally above the header */
 /* -------------------------------------------------------------------------- */
 
 .projects {
-  background-color: white;
+  background-color: #FAFAFA;
   padding: 40px 40px 80px 40px;
 }
 
@@ -218,9 +221,9 @@ article img {
 /* -------------------------------------------------------------------------- */
 
 .prefooter {
-  background-color: #707070;
+  background-color: #455A64;
   padding: 60px;
-  color: white;
+  color: #FAFAFA;
 }
 
 .prefooter-content {
@@ -273,7 +276,7 @@ article img {
 }
 
 .follow li a {
-  color: white;
+  color: #FAFAFA;
   text-decoration: none;
 }
 
@@ -282,7 +285,7 @@ article img {
 /* -------------------------------------------------------------------------- */
 
 footer {
-  color: #707070;
+  color: #455A64;
   text-align: center;
   padding: 30px 0;
 }

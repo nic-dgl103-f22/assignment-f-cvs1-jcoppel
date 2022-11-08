@@ -30,13 +30,17 @@ body {
 }
 
 button {
-  background-color: #FFA726;
-  color: #FAFAFA;
+  background-color: #ffa726;
+  color: #fafafa;
   font-weight: 700;
   font-size: 1.7rem;
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
+}
+
+button:hover {
+  background-color: #ffcc80;
 }
 
 h1 {
@@ -56,13 +60,7 @@ h3 {
 /* -------------------------------------------------------------------------- */
 
 header {
-  background-color: #455A64;
-  height: 150px;
-}
-
-.header-content {
-  margin: auto calc(15% - 20px);
-  overflow: auto;
+  background-color: #455a64;
 }
 
 header img {
@@ -74,6 +72,8 @@ header img {
 /* ----------------------------------- nav ---------------------------------- */
 
 nav {
+  margin: auto calc(15% - 20px);
+  overflow: auto;
   text-align: right;
 }
 
@@ -87,14 +87,14 @@ nav ul {
 nav ul li {
   display: inline-block;
   line-height: 150px;
-  padding-left: 80px;
 }
 
 nav a {
-  color: #FAFAFA;
+  color: #fafafa;
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 700;
+  padding-left: 80px;
 }
 
 /* when the browser gets too small for navbar links to render
@@ -131,7 +131,7 @@ side-by-side, this will display them vertically */
 /* -------------------------------------------------------------------------- */
 
 .hero {
-  background-color: #ECEFF1;
+  background-color: #eceff1;
   margin: 0px;
   padding: 40px;
 }
@@ -173,7 +173,7 @@ this will display the image normally above the header */
 /* -------------------------------------------------------------------------- */
 
 .projects {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 40px 40px 80px 40px;
 }
 
@@ -210,7 +210,7 @@ article img {
   font-size: 0;
 }
 
-.article-container:after {
+.article-container::after {
   content: "";
   width: 100%;
   display: inline-block;
@@ -221,9 +221,9 @@ article img {
 /* -------------------------------------------------------------------------- */
 
 .prefooter {
-  background-color: #455A64;
+  background-color: #455a64;
   padding: 60px;
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .prefooter-content {
@@ -236,6 +236,14 @@ article img {
   list-style-type: none;
 }
 
+.prefooter h2 {
+  font-size: 2.4rem;
+}
+
+.prefooter h3 {
+  font-size: 1.6rem;
+}
+
 /* ---------------------------------- news ---------------------------------- */
 
 .news {
@@ -244,13 +252,18 @@ article img {
   padding-right: 20px;
 }
 
-.news li h4 {
+.news li h3 {
   margin-top: 30px;
   margin-bottom: 0;
 }
 
 .news li p {
   margin: 0;
+}
+
+.news li a {
+  color: #fafafa;
+  text-decoration: none;
 }
 
 /* ---------------------------------- about --------------------------------- */
@@ -276,7 +289,7 @@ article img {
 }
 
 .follow li a {
-  color: #FAFAFA;
+  color: #fafafa;
   text-decoration: none;
 }
 
@@ -285,7 +298,7 @@ article img {
 /* -------------------------------------------------------------------------- */
 
 footer {
-  color: #455A64;
+  color: #455a64;
   text-align: center;
   padding: 30px 0;
 }
